@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_cidade")
 public class Cidade implements Serializable {
 
     @Id
