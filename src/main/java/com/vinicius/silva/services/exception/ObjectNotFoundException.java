@@ -1,4 +1,4 @@
-package com.vinicius.silva.services.exceptions;
+package com.vinicius.silva.services.exception;
 
 public class ObjectNotFoundException extends RuntimeException {
     private static final long serialVersionUID = 1L;

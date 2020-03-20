@@ -2,11 +2,10 @@ package com.vinicius.silva.services;
 
 import com.vinicius.silva.domain.Categoria;
 import com.vinicius.silva.repositories.CategoriaRepository;
-import com.vinicius.silva.services.exceptions.ObjectNotFoundException;
+import com.vinicius.silva.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.Id;
 import java.util.Optional;
 
 @Service

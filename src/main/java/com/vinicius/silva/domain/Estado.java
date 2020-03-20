@@ -1,6 +1,8 @@
 package com.vinicius.silva.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,7 +10,6 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_estado")
 public class Estado implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -18,8 +19,8 @@ public class Estado implements Serializable {
     private Integer id;
     private String nome;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "estado")
-
     private List<Cidade> cidades = new ArrayList<>();
 
     public Estado(){
